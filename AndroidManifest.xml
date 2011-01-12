@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.forbrugsforeningen"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application android:label="forbrugsforeningen" android:icon="@drawable/icon">
+        <uses-library android:name="com.google.android.maps"/>
+        <activity android:name=".activities.SearchActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.ResultsActivity"
+                  android:label="@string/activity_results">
+        </activity>
+
+        <activity android:name=".activities.MapResultsActivity"
+                  android:label="@string/activity_map_results">
+        </activity>
+
+
+        <!-- The application's publisher ID assigned by AdMob -->
+        <meta-data android:value="a14d152df08d6b7" android:name="ADMOB_PUBLISHER_ID"/>
+        <meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"/>
+        <!-- AdMobActivity definition -->
+        <activity android:name="com.admob.android.ads.AdMobActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation|keyboard|keyboardHidden"/>
+        <!-- Track Market installs -->
+        <receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest> 

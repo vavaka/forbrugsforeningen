@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Forbrugsforeningen</string>
+    <string name="query_string">Butik eller branche</string>
+    <string name="search">Søg</string>
+    <string name="location">Placering</string>
+    <string name="refresh">Refresh</string>
+    <string name="back">Back</string>
+    <string name="map">View on map</string>
+    <string name="activity_search">Søg</string>
+    <string name="activity_results">Liste</string>
+    <string name="activity_map_results">Kort</string>
+    <string name="loading">Loading. Please wait...</string>
+    <string name="nothing_found">Nothing found</string>
+    <string name="ok">OK</string>
+    <string name="location_error">Cannot get current location</string>
+    <string name="map_locations_not_found">Map locations found</string>
+    <string name="location_post_info_error">Cannot get current location post info</string>
+    <string name="my_location">My location</string>
+    <string name="go_to_location">Go to location</string>
+    <string name="your_location_not_found">Your location not found</string>
+    <string name="store_location_not_found">Store location not found</string>
+</resources>
